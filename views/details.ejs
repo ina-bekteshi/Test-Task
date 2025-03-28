@@ -1,0 +1,27 @@
+<%- include("header.ejs") %>
+
+<main class="main-container">
+    <h2>Add Your Personal Details</h2>
+    <form action="/summary" method="POST" class="form-container">
+      <input type="text" name="firstName" placeholder="First name" required>
+      <input type="text" name="lastName" placeholder="Last name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <label class="box">
+        <input type="checkbox" name="agrees">
+        By clicking the button above, you acknowledge, consent and agree to the following: 
+        a) Our Privacy Policy and consent to receive notices and other communications electronically; 
+        b) We take your privacy seriously. You are providing express written consent for us to share your 
+        information with up to four (4) of its and for, parties calling on behalf of, or authorized third 
+        parties on their behalf to contact you (including through automated means; e.g. autodialing, text 
+        and pre-recorded messaging) about legal services or other Mass Tort related offers via telephone, 
+        mobile device (including SMS and MMS) and/or email, even if your telephone number is currently 
+        listed on any state, federal, local or corporate Do Not Call list; 
+        c) Consent to be contacted is not required in order to purchase goods or services from or the that 
+        contact you. You may choose to speak with an individual service provider by dialing (888) 888-8888. <hr>
+    </label>
+      <button id="sub-btn" type="submit">SUBMIT YOUR DETAILS > </button>
+    </form>
+  </main>
+
+<%- include("footer.ejs") %>
