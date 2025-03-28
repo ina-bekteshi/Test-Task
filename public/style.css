@@ -67,6 +67,7 @@ a {
     background-color: rgb(127, 170, 255);
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .active {
@@ -98,6 +99,7 @@ select option {
     color: white;
     font-weight: bold;
     margin: 10px 0px 15px 0px;
+    cursor: pointer;
 }
 
 input:not([type="checkbox"])  {
