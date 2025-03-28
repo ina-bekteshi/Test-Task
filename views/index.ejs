@@ -3,7 +3,7 @@
 <main class="main-container">
   <h1>What Is The Best Time To Reach You?</h1>
   <form action="/details" method="POST" class="form-container">
-    <select name="time" required>
+    <select name="time" required onchange="changeBtnColor()">
       <option value="">Choose Your Time</option>
       <option value="8 AM CST">8 AM CST</option>
       <option value="9 AM CST">9 AM CST</option>
@@ -17,8 +17,16 @@
       <option value="5 PM CST">5 PM CST</option>
     </select>
     <p class="center">(All times are in CST)</p>
-    <button id="c-btn" type="submit">CONTINUE > </button>
+    <button class="c-btn" type="submit">CONTINUE > </button>
   </form>
 </main>
+
+<script>
+  function changeBtnColor(){
+    if(document.querySelector('select').value){
+      document.querySelector('.c-btn').classList.add('active');
+    }
+  }
+</script>
 
 <%- include("footer.ejs") %>
