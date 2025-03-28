@@ -56,23 +56,31 @@ a {
     justify-content: space-evenly;
 }
 
-#c-btn, select {
+.c-btn, select {
     padding: 15px;
     border-radius: 5px;
     width: 280px;
 } 
 
-#c-btn {
+.c-btn {
     border: none;
-    background-color: rgb(30, 103, 250);
+    background-color: rgb(127, 170, 255);
     color: white;
     font-weight: bold;
 }
 
+.active {
+    background-color: rgb(30, 103, 250);
+}
+
 select {
-    border: 2px solid black;
+    border: 1px solid grey;
     color: gray;
     appearance: none;
+}
+
+select:active {
+    border: 2px solid black;
 }
 
 select option {
@@ -81,7 +89,7 @@ select option {
     font-family: 'Times New Roman', Times, serif;
 }
 
-#sub-btn {
+.sub-btn {
     padding: 15px;
     border-radius: 5px;
     width: 280px;
@@ -122,18 +130,20 @@ sup {
 
 .box {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(244, 244, 244);
-    width: 385px;
+    background-color: rgb(250, 250, 250);
+    width: 370px;
     font-size: 7px;
     display: flex;
-    align-items: baseline;
-    justify-content: space-around;
+    align-items: flex-start; 
     text-align: justify;
-    padding: 5px 5px 10px 5px;
+    padding: 10px 10px 20px 10px;
+    gap: 3px; 
 }
 
 input[type="checkbox"] {
-    width: 9px;
+    width: 10px; 
+    margin-top: 1px;
+    vertical-align: middle;
 }
 
 ul {
